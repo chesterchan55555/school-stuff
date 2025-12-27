@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="image_grid_world">
+
+    <!-- Ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Sun -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Define obstacles -->
+    <model name="block_1">
+      <pose>1 1 0.05 0 0 0</pose>
+      <link name="link_block_1">
+        <visual name="visual_block_1">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+          <texture>file:///home/chester/robot_ws/src/my_robot_description/worlds/images/image1.png</texture>
+        </visual>
+        <collision name="collision_block_1">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="block_2">
+      <pose>0.5 1.5 0.05 0 0 0</pose>
+      <link name="link_block_2">
+        <visual name="visual_block_2">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+          <texture>file:///home/chester/robot_ws/src/my_robot_description/worlds/images/image2.png</texture>
+        </visual>
+        <collision name="collision_block_2">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="block_3">
+      <pose>1.5 0.5 0.05 0 0 0</pose>
+      <link name="link_block_3">
+        <visual name="visual_block_3">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+          <texture>file:///home/chester/robot_ws/src/my_robot_description/worlds/images/image3.png</texture>
+        </visual>
+        <collision name="collision_block_3">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="block_4">
+      <pose>1.5 1.5 0.05 0 0 0</pose>
+      <link name="link_block_4">
+        <visual name="visual_block_4">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+          <texture>file:///home/chester/robot_ws/src/my_robot_description/worlds/images/image4.png</texture>
+        </visual>
+        <collision name="collision_block_4">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="block_5">
+      <pose>0.75 0.75 0.05 0 0 0</pose>
+      <link name="link_block_5">
+        <visual name="visual_block_5">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+          <texture>file:///home/chester/robot_ws/src/my_robot_description/worlds/images/image5.png</texture>
+        </visual>
+        <collision name="collision_block_5">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+  </world>
+</sdf>

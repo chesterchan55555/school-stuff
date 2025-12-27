@@ -1,0 +1,14 @@
+
+matplotlib
+torch
+numpy
+transformers
+datasets
+tiktoken
+wandb
+tqdm
+transformers==4.56.2
+torch
+torchvision
+torchaudio
+https://download.pytorch.org/whl/cu118

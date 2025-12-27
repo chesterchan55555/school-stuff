@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run toy_pke_bruteforce",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/toy_pke_bruteforce.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Run toy_pke_bkz",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/toy_pke_bkz.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

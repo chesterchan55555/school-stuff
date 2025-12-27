@@ -1,0 +1,14 @@
+twist_mux:
+  ros__parameters:
+    use_sim_time: true
+    debug: true
+    topics:
+      - name: /cmd_vel_teleop
+        timeout: 0.2
+        priority: 10
+      - name: /cmd_vel_coverage
+        timeout: 1.0
+        priority: 5
+      - name: /cmd_vel_stop
+        timeout: 4.0
+        priority: 100

@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create venv",
+      "type": "shell",
+      "command": "${config:python.pythonPath} -m venv .venv",
+      "problemMatcher": []
+    },
+    {
+      "label": "Install requirements",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python -m pip install -r requirements.txt",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python -m pip install -r requirements.txt"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
